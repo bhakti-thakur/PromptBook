@@ -5,6 +5,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 import Form from "@components/Form";
 
+export const dynamic = 'force-dynamic';  // Disable SSG/SSR, force CSR
+
 const UpdatePrompt = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
